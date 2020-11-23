@@ -53,21 +53,34 @@ class BinarySearchTree{
             }
 
         }
-
-        find()
-
-        //Check current value of the node and see if it's greater  or less
-        //if less, put in the left child
-
-
+      
     }
+      //Check current value of the node and see if it's greater or less
+            //if equal, return current node
+            //if less, make left child currentNode
+            //if greater, make right child currentNode
+    find(value) {
+        this.currentNode = this.root
+        if(this.currentNode === null){
+            return false
+        }
+        while(this.currentNode !== null){
+            if(this.currentNode.value === value) return this.currentNode.value
 
+            if(value > this.currentNode.value){
+                this.currentNode = this.currentNode.right
+            } else {
+                this.currentNode = this.currentNode.left
+            }
+        }
+        return false
+    }
+       
 }
 
 //         3
 //     2      5
 //    1         7
-
 //Example of constructing a Binary Search Tree
 var tree = new BinarySearchTree()
 tree.insert(3)
@@ -75,7 +88,7 @@ tree.insert(2)
 tree.insert(1)
 tree.insert(5)
 tree.insert(7)
-
+console.log(tree.find(1))
 //Inserts - iteratively or Recursively
 // Create a new Node
 // Starting at the root
@@ -91,7 +104,10 @@ tree.insert(7)
             //if there is not, add that node as the left property
     
             
-
+//BFS:
+    //starting on a tree going horrizontally
+//DFS:
+    //Starting on a tree and going vertically 
 
 
 
