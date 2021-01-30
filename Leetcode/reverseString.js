@@ -17,6 +17,6 @@ function reverseString (arr) {
   return arrString
 }
 
-const input = ["h","e","l","l","o"]
-const output = ["o","l","l","e","h"]
+const input = ['h', 'e', 'l', 'l', 'o']
+const output = ['o', 'l', 'l', 'e', 'h']
 console.log(reverseString(input), 'Should be equal to: ', output)
