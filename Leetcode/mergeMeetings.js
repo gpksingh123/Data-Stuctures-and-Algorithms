@@ -31,6 +31,7 @@ let out1 = [
   { startTime: 3, endTime: 8 },
   { startTime: 9, endTime: 12 }
 ]
+
 let arr2 = [
   { startTime: 1, endTime: 10 },
   { startTime: 2, endTime: 6 },
