@@ -1,3 +1,4 @@
+/* eslint-disable */
 //Given an array of N integers and an integer S, computer how many ways one can choose a contiguous fragment of A that has an arithmetic mean equal to S. 
  function means(array,S){
 

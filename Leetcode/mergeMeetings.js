@@ -1,5 +1,5 @@
 // Optimized Solution
-
+/* eslint-disable */
 function mergeRanges (arr) {
   const meetings = arr.sort((a , b) => { return a - b })
 
