@@ -12,7 +12,6 @@ function cafeOrder(takeOutOrders, dineInOrders, servedOrders) {
     let p2 = 0
     let p3 = 0
 
-
     while ((p1 < takeOutOrders.length) || (p2 < dineInOrders.length) || (p3 < servedOrders.length)) {
         currentTakeOutOrder = takeOutOrders[p1]
         currentDineInOrder = dineInOrders[p2]
